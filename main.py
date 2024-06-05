@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-var1="Hello World"
+var1="Hello Woarld"
 
 @app.get("/")
 async def root():
