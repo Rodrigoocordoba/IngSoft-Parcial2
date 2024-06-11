@@ -34,8 +34,8 @@ jobs:
         with:
           status: ${{ job.status }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          notification_title: "{workflow} has {status_message}"
-          message_format: "{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>"
+          notification_title: "Run Tests: {workflow} has {status_message}"
+          message_format: "{emoji} *Run Tests: {workflow}* {status_message} in <{repo_url}|{repo}>"
           footer: "Linked Repo <{repo_url}|{repo}> | <{workflow_url}|View Workflow>"
           notify_when: "failure, success"
         env:
@@ -62,8 +62,8 @@ jobs:
         with:
           status: ${{ job.status }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          notification_title: "{workflow} has {status_message}"
-          message_format: "{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>"
+          notification_title: "SonarCloud Scan: {workflow} has {status_message}"
+          message_format: "{emoji} *SonarCloud Scan: {workflow}* {status_message} in <{repo_url}|{repo}>"
           footer: "Linked Repo <{repo_url}|{repo}> | <{workflow_url}|View Workflow>"
           notify_when: "failure, success"
         env:
@@ -86,8 +86,8 @@ jobs:
         with:
           status: ${{ job.status }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          notification_title: "{workflow} has {status_message}"
-          message_format: "{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>"
+          notification_title: "Deploy: {workflow} has {status_message}"
+          message_format: "{emoji} *Deploy: {workflow}* {status_message} in <{repo_url}|{repo}>"
           footer: "Linked Repo <{repo_url}|{repo}> | <{workflow_url}|View Workflow>"
           notify_when: "failure, success"
         env:
