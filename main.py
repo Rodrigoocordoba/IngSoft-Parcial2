@@ -8,4 +8,7 @@ var1="Hello World"
 
 @app.get("/")
 async def root():
-    return {"message": var1}
+    if True:
+        return {"message": var1}
+    else:
+        return {"message": var1}
